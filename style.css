@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #111;
+  font-family: sans-serif;
+}
+
+#menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  z-index: 10;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 160px;
+  font-size: 16px;
+}
+
+#game {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#track {
+  position: absolute;
+  width: 2000px;
+  height: 2000px;
+  background: url('images/track.png') center/cover no-repeat;
+}
+
+.start-line {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  background: white;
+  top: 500px;
+  left: 500px;
+}
+
+.car {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.car .body {
+  width: 100px;
+  height: 30px;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+}
+
+.car.lambo .body {
+  background-image: url('images/lambo.png');
+}
+
+.car.amg .body {
+  background-image: url('images/amg.png');
+}
+
+.car .roof {
+  width: 60px;
+  height: 20px;
+  background: rgba(255,255,255,0.2);
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.wheel {
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.wheel.front {
+  top: 5px;
+  left: 5px;
+}
+
+.wheel.back {
+  bottom: 5px;
+  right: 5px;
+}
+
+#lapCounter {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
