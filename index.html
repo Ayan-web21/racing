@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>3D Car Racing Game</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>3D CSS Car Racing</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="menu">
-    <div>Select Your Car:</div>
-    <button onclick="selectCar('lambo')">Lamborghini</button>
-    <button onclick="selectCar('amg')">Mercedes AMG</button>
-
-    <div style="margin-top:20px;">Select AI Difficulty:</div>
-    <button onclick="startGame('easy')">Easy</button>
-    <button onclick="startGame('medium')">Medium</button>
-    <button onclick="startGame('hard')">Hard</button>
-  </div>
-
-  <div id="game" style="display:none;">
+  <div id="game">
     <div id="track">
       <div class="start-line"></div>
     </div>
+
+    <!-- Player car -->
     <div class="car player" id="playerCar">
-      <div class="body"></div>
-      <div class="roof"></div>
-      <div class="wheel front"></div>
-      <div class="wheel back"></div>
+      <div class="part body"></div>
+      <div class="part roof"></div>
+      <div class="wheel front-left"></div>
+      <div class="wheel front-right"></div>
+      <div class="wheel back-left"></div>
+      <div class="wheel back-right"></div>
     </div>
+
+    <!-- AI cars -->
     <div class="car ai" id="aiCar1">
-      <div class="body"></div>
-      <div class="roof"></div>
-      <div class="wheel front"></div>
-      <div class="wheel back"></div>
+      <div class="part body"></div>
+      <div class="part roof"></div>
+      <div class="wheel front-left"></div>
+      <div class="wheel front-right"></div>
+      <div class="wheel back-left"></div>
+      <div class="wheel back-right"></div>
     </div>
     <div class="car ai" id="aiCar2">
-      <div class="body"></div>
-      <div class="roof"></div>
-      <div class="wheel front"></div>
-      <div class="wheel back"></div>
+      <div class="part body"></div>
+      <div class="part roof"></div>
+      <div class="wheel front-left"></div>
+      <div class="wheel front-right"></div>
+      <div class="wheel back-left"></div>
+      <div class="wheel back-right"></div>
     </div>
+
     <div id="lapCounter">Lap: 0</div>
   </div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
